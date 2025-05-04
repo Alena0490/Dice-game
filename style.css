@@ -1,0 +1,218 @@
+:root {
+    --clr-primary: #A855F7;
+    --clr-accent: #5FF758;
+  
+    --clr-bg: #F9F9FB;
+    --clr-surface: rgba(255, 255, 255, 0.2);
+    --clr-border: #E3E3E3;
+  
+    --clr-text: #1C1C1E;
+    --clr-text-muted: #666;
+  }
+  
+  body.dark {
+    --clr-primary: #C084FC;
+    --clr-accent: #4BE647;
+  
+    --clr-bg: #1E1B2E;
+    --clr-surface: rgba(30, 27, 46, 0.2);
+    --clr-border: #3C3755;
+  
+    --clr-text: #F9F9F9;
+    --clr-text-muted: #B3B3B3;
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    background: linear-gradient(var(--clr-bg), var(--clr-border));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--clr-primary);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 80%;
+    padding: 20px;
+    background-image: url(img/city.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--clr-text);
+    font-family: "Doto", sans-serif;
+    font-size: 45px;
+}
+h2 {
+    font-size: 28px;
+    text-align: center;
+    font-family: "Lora", serif;
+}
+
+p {
+    color: var(--clr-text);
+    text-align: right;
+    font-family: "Lora", serif;
+}
+
+.game {
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255, 0.3)
+}
+
+.score {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.totalScore {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0% auto;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--clr-text-muted) !important;
+}
+
+.playerName {
+    font-weight: 700;
+}
+
+.current {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.currentScore {
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+}
+
+.number {
+    background-color: var(--clr-surface);
+    margin: 0% auto;
+    text-align: center;
+    display: block;
+    width: 110px;
+    border-radius: 3px;
+    padding: 2px;
+    border: 1px solid rgb(255, 255, 255, 0.3)
+}
+
+
+h2 {
+    color: var(--clr-text);
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.dice {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.diceImage {
+    width: 40%;
+    max-width: 150px;
+    filter:  brightness(1.15) saturate(0);
+}
+
+
+.buttons {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+button {
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: "Lora", serif;
+    padding: 5px 10px;
+    margin: 0px auto;
+    border: none;
+    color: var(--clr-text);
+    box-shadow: 0px 0px 2px #f5f5f5;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    /* margin: 10px; */
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+.play, .hold {
+    background-color: var(--clr-primary);
+}
+
+.start-game {
+    background-color: var(--clr-accent);
+
+}
+
+footer {
+    width: 100%;
+    background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}

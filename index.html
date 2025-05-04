@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="container">
+        <header>
+            <h1>Roll the Dice</h1>
+        </header>
+        <main>
+            <section class="game">
+                <h2>Game</h2>
+                <article class="score">
+                    <div class="totalScore totalScore0">
+                        <p id="name-0" class="playerName">
+                            1st Player
+                        </p>
+                        <p id="totalScorePlayer-0" class="number">30</p>
+                    </div>
+                    <div class="totalScore totalScore1">
+                        <p id="name-1" class="playerName">
+                            2nd Player
+                        </p>
+                        <p id="totalScorePlayer-1" class="number">40</p>
+                    </div>
+                </article>
+
+                <article class="current">
+                    <div class="currentScore currentScore0">
+                        <p>Current score</p>
+                        <p id="currentScore-0" class="number">3</p>
+                    </div>
+                    <div class="currentScore currentScore1">
+                        <p>Current score</p>
+                        <p id="currentScore-1" class="number">8</p>
+                    </div>
+            </article>
+            <article class="dice">
+                <img src="img/1.png" alt="hrací kostka" class="diceImage">
+            </article>
+
+            <article class="buttons">
+                <button class="play">Roll the Dice</button>
+                <button class="hold">Hold Score</button>
+                <button class="start-game">New Game</button>                
+            </article>
+            </section>
+
+        </main>
+        <footer>
+            <p>Copyright Alena Pumprová, 2025</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
