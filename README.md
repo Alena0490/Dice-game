@@ -1,6 +1,6 @@
 # 🎲 Dice Game – Roll the Dice
 
-![Mockup hry](img/dice-game-mockup1.jpg)
+![Mockup hry](dice-game-mockup1.jpg)
 
 Interaktivní **kostková hra pro dva hráče**, postavená v **HTML, CSS a JavaScriptu**. Stylizovaná s použitím barevných proměnných, podporuje dark režim a zahrnuje přehledné herní rozhraní s animací házení kostky.
 
