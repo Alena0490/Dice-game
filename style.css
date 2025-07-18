@@ -75,6 +75,12 @@ h2 {
     font-family: "Lora", serif;
 }
 
+h3 {
+    color: var( --clr-text) ;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
 p {
     color: var(--clr-text);
     text-align: right;
@@ -115,8 +121,27 @@ p {
     color: var(--clr-text-muted) !important;
 }
 
-.playerName {
+.playerName, .total {
     font-weight: 700;
+    transition: all 0.5s linear;
+}
+
+.playerName.winner {
+    color: var(--clr-text);
+    font-size: 20px;
+    display: block;
+    background-color: #A855F7;
+    padding: 0px 5px;
+    border-radius: 5px;
+  }
+
+.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-accent);
+    text-decoration-thickness: 3px;
+    text-decoration-skip-ink:auto;
+    text-underline-offset: 2px; 
 }
 
 .current {
